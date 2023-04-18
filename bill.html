@@ -1,0 +1,561 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: linear-gradient(40deg,red,rgba(100, 5, 224, 0.6));
+                color:white;
+            }
+            td{
+                font-size:x-large;
+                margin: 10px;
+                border: 1px solid white;
+            }
+
+            input{
+                width: 50px;
+                align-items: center;
+            }
+            th{
+                
+                border: 2px solid rgba(225, 225, 225, .2);
+            }
+            .items{
+                margin-top: 7%;
+            }
+            table{
+                border: 10px solid red ;
+                border-radius: 5px;
+            }
+            .underline{
+                background-color: white;
+                width: 600px;
+                height: 6px;
+                border-radius: 10px;
+                margin-top: -50px;
+                margin-left: 350px;
+            }
+            #total{
+                position: absolute;
+                right: 30px;
+                top:300px;
+                background-color: red;
+                width:300px;
+                max-width: 600px;
+                text-align: center;
+                height: max-content;
+                display: none;
+                border-radius: 20px;
+            }
+            h6{
+                text-align: l<html>
+    <head>
+        <style>
+            body{
+                background-image: linear-gradient(40deg,red,rgba(100, 5, 224, 0.6));
+                color:white;
+            }
+            td{
+                font-size:x-large;
+                margin: 10px;
+                border: 1px solid white;
+            }
+
+            input{
+                width: 50px;
+                align-items: center;
+            }
+            th{
+                
+                border: 2px solid rgba(225, 225, 225, .2);
+            }
+            .items{
+                margin-top: 7%;
+            }
+            table{
+                border: 10px solid red ;
+                border-radius: 5px;
+            }
+            .underline{
+                background-color: white;
+                width: 600px;
+                height: 6px;
+                border-radius: 10px;
+                margin-top: -50px;
+                margin-left: 350px;
+            }
+            #total{
+                position: absolute;
+                right: 30px;
+                top:300px;
+                background-color: red;
+                width:300px;
+                max-width: 600px;
+                text-align: center;
+                height: max-content;
+                display: none;
+                border-radius: 20px;
+            }
+            h6{
+                text-align: left;
+            }
+            @keyframes ani{
+                from{
+                    top:-10%;
+                    left: 45%;
+                }
+                to{
+                    top:35%;
+                    left: 45%;
+                }
+            }
+            img{
+                display: none;
+            }
+            .img{
+                display: block;
+                position: absolute;
+                bottom: 5%;
+                left: 70px;
+                border-radius: 30px;
+                image-rendering: crisp-edges;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://media.tenor.com/RCqWZMH84FgAAAAd/coca-cola-share-a-coke.gif" width="300" height="400" class="img" >
+        <center><h1 class="hitems" style="font-size: 100px;color: red;" >Restau<span style="color: white;" >rant</span></h1></center>
+        <div class="underline" ></div>
+        <div class="items" id="items">
+            <center> 
+            
+        <table>
+            <tr><th><h3>items</h3></th><th><h3>prices</h3></th><th><h3>add .Qnty</h3></th><th><h3>add to cart</h3></th></tr>
+            <tr><td>Chicken555</td><td>200/-</td><td><center><input type="number" value="" id="Chicken555" min="0" ></center></td><td><button onclick="addto('Chicken555',200)" >add to cart</button></td></tr>
+            <tr><td>DragonChicken</td><td>300/-</td><td><center><input type="number" value="" min="0" id="DragonChicken" ></center></td><td><button onclick="addto('DragonChicken',300)" >add to cart</button></td></tr>
+            <tr><td>Chicken65</td><td>200/-</td><td><center><input type="number" value="" min="0" id="Chicken65"></center></td><td><button onclick="addto('Chicken65',200)" >add to cart</button></td></tr>
+            <tr><td>ChickenDum</td><td>250/-</td><td><center><input type="number" value="" min="0" id="ChickenDum" ></center></td><td><button onclick="addto('ChickenDum',250)" >add to cart</button></td></tr></tr>
+            <tr><td>ChickenMughalai</td><td>300/-</td><td><center><input type="number" value="" min="0" id="ChickenMughalai" ></center></td><td><button onclick="addto('ChickenMughalai',300)" >add to cart</button></td></tr></tr>
+            <tr><td>ChickenLollipop</td><td>200/-</td><td><center><input type="number" min="0" value="" id="ChickenLollipop" ></center></td><td><button onclick="addto('ChickenLollipop',200)" >add to cart</button></td></tr></tr>
+            <tr><td>Thumbsup</td><td>20/-</td><td><center><input type="number" value="" min="0" id="Thumbsup" ></center></td><td><button onclick="addto('Thumbsup',20)" >add to cart</button></td></tr></tr>
+            <tr><td>Soda</td><td>10/-</td><td><center><input type="number" value="" min="0" id="Soda" ></center></td><td><button onclick="addto('Soda',10)" >add to cart</button></td></tr></tr>
+            <tr><td>EnergyDrink</td><td>90/-</td><td><center><input type="number" min="0" value="" id="EnergyDrink" ></center></td><td><button onclick="addto('EnergyDrink',90)" >add to cart</button></td></tr></tr>
+            <tr><td>CheeseCake</td><td>50/-</td><td><center><input type="number" min="0" value="" id="CheeseCake" ></center></td><td><button onclick="addto('CheeseCake',50)" >add to cart</button></td></tr></tr>
+            <tr><td>RedWalvetCake</td><td>70/-</td><td><center><input type="number" min="0" value="" id="RedWalvetCake" ></center></td><td><button onclick="addto('RedWalvetCake',70)" >add to cart</button></td></tr></tr>
+            <tr><td>ChocolateCake</td><td>40/-</td><td><center><input type="number" min="0" value="" id="ChocolateCake" ></center></td><td><button onclick="addto('ChocolateCake',40)" >add to cart</button></td></tr></tr>
+        </table>
+       <button style="margin-top:30px;width: max-content;height: 50px;background-color: red;color:white;border-color:white ; cursor: pointer; " onclick="gen();"  >Generat Bill</button></center>
+    </div>
+    <div id="total" >
+        <h1>BILL</h1>
+        
+    <div id="bill"  >
+        
+    </div>
+    <p>----------------------------------------------</p>
+    <h3>total=<span id="totalamount" ></span></h3>
+    </div>
+    </body>
+    <script>
+        let total = 0;
+function addto(item, price) {
+    quantity=document.getElementById(item).value;
+    const itemTotal = quantity * price;
+    total += itemTotal;
+    const itemString = `${item} - ${price} x ${quantity}=${itemTotal}`;
+    if(quantity!=0){
+    document.getElementById('total').style.display="inline";
+    document.getElementById('bill').insertAdjacentHTML('beforeend', `<h5>${itemString}</h5>`);
+    document.getElementById('totalamount').innerHTML=total;
+    }
+    else
+    alert('set quantity');
+}
+function gen(){
+    if(total>0){
+    document.getElementById('items').style.display="none";
+    var n=document.getElementById('total').style;
+    n.animationName="ani";
+    n.animationDuration="3s";
+    n.top="35%";
+    n.left="45%";
+    setTimeout(() => {
+        window.print();    
+    }, 5000);
+    }
+    else
+    alert('please add the cart food items');
+}
+
+    </script>
+</html>eft;
+            }
+            @keyframes ani{
+                from{
+                    top:-10%;
+                    left: 45%;
+                }
+                to{
+                    top:35%;
+                    left: 45%;
+                }
+            }
+            img{
+                display: none;
+            }
+            .img{
+                display: block;
+                position: absolute;
+                bottom: 5%;
+                left: 70px;
+                border-radius: 30px;
+                image-rendering: crisp-edges;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://media.tenor.com/RCqWZMH84FgAAAAd/coca-cola-share-a-coke.gif" width="300" height="400" class="img" >
+        <center><h1 class="hitems" style="font-size: 100px;color: red;" >Restau<span style="color: white;" >rant</span></h1></center>
+        <div class="underline" ></div>
+        <div class="items" id="items">
+            <center> 
+            
+        <table>
+            <tr><th><h3>items</h3></th><th><h3>prices</h3></th><th><h3>add .Qnty</h3></th><th><h3>add to cart</h3></th></tr>
+            <tr><td>Chicken555</td><td>200/-</td><td><center><input type="number" value="" id="Chicken555" min="0" ></center></td><td><button onclick="addto('Chicken555',200)" >add to cart</button></td></tr>
+            <tr><td>DragonChicken</td><td>300/-</td><td><center><input type="number" value="" min="0" id="DragonChicken" ></center></td><td><button onclick="addto('DragonChicken',300)" >add to cart</button></td></tr>
+            <tr><td>Chicken65</td><td>200/-</td><td><center><input type="number" value="" min="0" id="Chicken65"></center></td><td><button onclick="addto('Chicken65',200)" >add to cart</button></td></tr>
+            <tr><td>ChickenDum</td><td>250/-</td><td><center><input type="number" value="" min="0" id="ChickenDum" ></center></td><td><button onclick="addto('ChickenDum',250)" >add to cart</button></td></tr></tr>
+            <tr><td>ChickenMughalai</td><td>300/-</td><td><center><input type="number" value="" min="0" id="ChickenMughalai" ></center></td><td><button onclick="addto('ChickenMughalai',300)" >add to cart</button></td></tr></tr>
+            <tr><td>ChickenLollipop</td><td>200/-</td><td><center><input type="number" min="0" value="" id="ChickenLollipop" ></center></td><td><button onclick="addto('ChickenLollipop',200)" >add to cart</button></td></tr></tr>
+            <tr><td>Thumbsup</td><td>20/-</td><td><center><input type="number" value="" min="0" id="Thumbsup" ></center></td><td><button onclick="addto('Thumbsup',20)" >add to cart</button></td></tr></tr>
+            <tr><td>Soda</td><td>10/-</td><td><center><input type="number" value="" min="0" id="Soda" ></center></td><td><button onclick="addto('Soda',10)" >add to cart</button></td></tr></tr>
+            <tr><td>EnergyDrink</td><td>90/-</td><td><center><input type="number" min="0" value="" id="EnergyDrink" ></center></td><td><button onclick="addto('EnergyDrink',90)" >add to cart</button></td></tr></tr>
+            <tr><td>CheeseCake</td><td>50/-</td><td><center><input type="number" min="0" value="" id="CheeseCake" ></center></td><td><button onclick="addto('CheeseCake',50)" >add to cart</button></td></tr></tr>
+            <tr><td>RedWalvetCake</td><td>70/-</td><td><center><input type="number" min="0" value="" id="RedWalvetCake" ></center></td><td><button onclick="addto('RedWalvetCake',70)" >add to cart</button></td></tr></tr>
+            <tr><td>ChocolateCake</td><td>40/-</td><td><center><input type="number" min="0" value="" id="ChocolateCake" ></center></td><td><button onclick="addto('ChocolateCake',40)" >add to cart</button></td></tr></tr>
+        </table>
+       <button style="margin-top:30px;width: max-content;height: 50px;background-color: red;color:white;border-color:white ; cursor: pointer; " onclick="gen();"  >Generat Bill</button></center>
+    </div>
+    <div id="total" >
+        <h1>BILL</h1>
+        
+    <div id="bill"  >
+        
+    </div>
+    <p>----------------------------------------------</p>
+    <h3>total=<span id="tot<html>
+    <head>
+        <style>
+            body{
+                background-image: linear-gradient(40deg,red,rgba(100, 5, 224, 0.6));
+                color:white;
+            }
+            td{
+                font-size:x-large;
+                margin: 10px;
+                border: 1px solid white;
+            }
+
+            input{
+                width: 50px;
+                align-items: center;
+            }
+            th{
+                
+                border: 2px solid rgba(225, 225, 225, .2);
+            }
+            .items{
+                margin-top: 7%;
+            }
+            table{
+                border: 10px solid red ;
+                border-radius: 5px;
+            }
+            .underline{
+                background-color: white;
+                width: 600px;
+                height: 6px;
+                border-radius: 10px;
+                margin-top: -50px;
+                margin-left: 350px;
+            }
+            #total{
+                position: absolute;
+                right: 30px;
+                top:300px;
+                background-color: red;
+                width:300px;
+                max-width: 600px;
+                text-align: center;
+                height: max-content;
+                display: none;
+                border-radius: 20px;
+            }
+            h6{
+                text-align: left;
+            }
+            @keyframes ani{
+                from{
+                    top:-10%;
+                    left: 45%;
+                }
+                to{
+                    top:35%;
+                    left: 45%;
+                }
+            }
+            img{
+                display: none;
+            }
+            .img{
+                display: block;
+                position: absolute;
+                bottom: 5%;
+                left: 70px;
+                border-radius: 30px;
+                image-rendering: crisp-edges;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://media.tenor.com/RCqWZMH84FgAAAAd/coca-cola-share-a-coke.gif" width="300" height="400" class="img" >
+        <center><h1 class="hitems" style="font-size: 100px;color: red;" >Restau<span style="color: white;" >rant</span></h1></center>
+        <div class="underline" ></div>
+        <div class="items" id="items">
+            <center> 
+            
+        <table>
+            <tr><th><h3>items</h3></th><th><h3>prices</h3></th><th><h3>add .Qnty</h3></th><th><h3>add to cart</h3></th></tr>
+            <tr><td>Chicken555</td><td>200/-</td><td><center><input type="number" value="" id="Chicken555" min="0" ></center></td><td><button onclick="addto('Chicken555',200)" >add to cart</button></td></tr>
+            <tr><td>DragonChicken</td><td>300/-</td><td><center><input type="number" value="" min="0" id="DragonChicken" ></center></td><td><button onclick="addto('DragonChicken',300)" >add to cart</button></td></tr>
+            <tr><td>Chicken65</td><td>200/-</td><td><center><input type="number" value="" min="0" id="Chicken65"></center></td><td><button onclick="addto('Chicken65',200)" >add to cart</button></td></tr>
+            <tr><td>ChickenDum</td><td>250/-</td><td><center><input type="number" value="" min="0" id="ChickenDum" ></center></td><td><button onclick="addto('ChickenDum',250)" >add to cart</button></td></tr></tr>
+            <tr><td>ChickenMughalai</td><td>300/-</td><td><center><input type="number" value="" min="0" id="ChickenMughalai" ></center></td><td><button onclick="addto('ChickenMughalai',300)" >add to cart</button></td></tr></tr>
+            <tr><td>ChickenLollipop</td><td>200/-</td><td><center><input type="number" min="0" value="" id="ChickenLollipop" ></center></td><td><button onclick="addto('ChickenLollipop',200)" >add to cart</button></td></tr></tr>
+            <tr><td>Thumbsup</td><td>20/-</td><td><center><input type="number" value="" min="0" id="Thumbsup" ></center></td><td><button onclick="addto('Thumbsup',20)" >add to cart</button></td></tr></tr>
+            <tr><td>Soda</td><td>10/-</td><td><center><input type="number" value="" min="0" id="Soda" ></center></td><td><button onclick="addto('Soda',10)" >add to cart</button></td></tr></tr>
+            <tr><td>EnergyDrink</td><td>90/-</td><td><center><input type="number" min="0" value="" id="EnergyDrink" ></center></td><td><button onclick="addto('EnergyDrink',90)" >add to cart</button></td></tr></tr>
+            <tr><td>CheeseCake</td><td>50/-</td><td><center><input type="number" min="0" value="" id="CheeseCake" ></center></td><td><button onclick="addto('CheeseCake',50)" >add to cart</button></td></tr></tr>
+            <tr><td>RedWalvetCake</td><td>70/-</td><td><center><input type="number" min="0" value="" id="RedWalvetCake" ></center></td><td><button onclick="addto('RedWalvetCake',70)" >add to cart</button></td></tr></tr>
+            <tr><td>ChocolateCake</td><td>40/-</td><td><center><input type="number" min="0" value="" id="ChocolateCake" ></center></td><td><button onclick="addto('ChocolateCake',40)" >add to cart</button></td></tr></tr>
+        </table>
+       <button style="margin-top:30px;width: max-content;height: 50px;background-color: red;color:white;border-color:white ; cursor: pointer; " onclick="gen();"  >Generat Bill</button></center>
+    </div>
+    <div id="total" >
+        <h1>BILL</h1>
+        
+    <div id="bill"  >
+        
+    </div>
+    <p>----------------------------------------------</p>
+    <h3>total=<span id="totalamount" ></span></h3>
+    </div>
+    </body>
+    <script>
+        let total = 0;
+function addto(item, price) {
+    quantity=document.getElementById(item).value;
+    const itemTotal = quantity * price;
+    total += itemTotal;
+    const itemString = `${item} - ${price} x ${quantity}=${itemTotal}`;
+    if(quantity!=0){
+    document.getElementById('total').style.display="inline";
+    document.getElementById('bill').insertAdjacentHTML('beforeend', `<h5>${itemString}</h5>`);
+    document.getElementById('totalamount').innerHTML=total;
+    }
+    else
+    alert('set quantity');
+}
+function gen(){
+    if(total>0){
+    document.getElementById('items').style.display="none";
+    var n=document.getElementById('total').style;
+    n.animationName="ani";
+    n.animationDuration="3s";
+    n.top="35%";
+    n.left="45%";
+    setTimeout(() => {
+        window.print();    
+    }, 5000);
+    }
+    else
+    alert('please add the cart food items');
+}
+
+    </script>
+</html>alamount" ></span></h3>
+    </div>
+    </body>
+    <script>
+        let total = 0;
+function addto(item, price) {
+    quantity=document.getElementById(item).value;
+    const itemTotal = quantity * price;
+    total += itemTotal;
+    const itemString = `${item} - ${price} x ${quantity}=${itemTotal}`;
+    if(quantity!=0){
+    document.getElementById('total').style.display="inline";
+    document.getElementById('bill').insertAdjacentHTML('beforeend', `<h5>${itemString}</h5>`);
+    document.getElementById('totalamount').innerHTML=total;
+    }
+    else<html>
+    <head>
+        <style>
+            body{
+                background-image: linear-gradient(40deg,red,rgba(100, 5, 224, 0.6));
+                color:white;
+            }
+            td{
+                font-size:x-large;
+                margin: 10px;
+                border: 1px solid white;
+            }
+
+            input{
+                width: 50px;
+                align-items: center;
+            }
+            th{
+                
+                border: 2px solid rgba(225, 225, 225, .2);
+            }
+            .items{
+                margin-top: 7%;
+            }
+            table{
+                border: 10px solid red ;
+                border-radius: 5px;
+            }
+            .underline{
+                background-color: white;
+                width: 600px;
+                height: 6px;
+                border-radius: 10px;
+                margin-top: -50px;
+                margin-left: 350px;
+            }
+            #total{
+                position: absolute;
+                right: 30px;
+                top:300px;
+                background-color: red;
+                width:300px;
+                max-width: 600px;
+                text-align: center;
+                height: max-content;
+                display: none;
+                border-radius: 20px;
+            }
+            h6{
+                text-align: left;
+            }
+            @keyframes ani{
+                from{
+                    top:-10%;
+                    left: 45%;
+                }
+                to{
+                    top:35%;
+                    left: 45%;
+                }
+            }
+            img{
+                display: none;
+            }
+            .img{
+                display: block;
+                position: absolute;
+                bottom: 5%;
+                left: 70px;
+                border-radius: 30px;
+                image-rendering: crisp-edges;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://media.tenor.com/RCqWZMH84FgAAAAd/coca-cola-share-a-coke.gif" width="300" height="400" class="img" >
+        <center><h1 class="hitems" style="font-size: 100px;color: red;" >Restau<span style="color: white;" >rant</span></h1></center>
+        <div class="underline" ></div>
+        <div class="items" id="items">
+            <center> 
+            
+        <table>
+            <tr><th><h3>items</h3></th><th><h3>prices</h3></th><th><h3>add .Qnty</h3></th><th><h3>add to cart</h3></th></tr>
+            <tr><td>Chicken555</td><td>200/-</td><td><center><input type="number" value="" id="Chicken555" min="0" ></center></td><td><button onclick="addto('Chicken555',200)" >add to cart</button></td></tr>
+            <tr><td>DragonChicken</td><td>300/-</td><td><center><input type="number" value="" min="0" id="DragonChicken" ></center></td><td><button onclick="addto('DragonChicken',300)" >add to cart</button></td></tr>
+            <tr><td>Chicken65</td><td>200/-</td><td><center><input type="number" value="" min="0" id="Chicken65"></center></td><td><button onclick="addto('Chicken65',200)" >add to cart</button></td></tr>
+            <tr><td>ChickenDum</td><td>250/-</td><td><center><input type="number" value="" min="0" id="ChickenDum" ></center></td><td><button onclick="addto('ChickenDum',250)" >add to cart</button></td></tr></tr>
+            <tr><td>ChickenMughalai</td><td>300/-</td><td><center><input type="number" value="" min="0" id="ChickenMughalai" ></center></td><td><button onclick="addto('ChickenMughalai',300)" >add to cart</button></td></tr></tr>
+            <tr><td>ChickenLollipop</td><td>200/-</td><td><center><input type="number" min="0" value="" id="ChickenLollipop" ></center></td><td><button onclick="addto('ChickenLollipop',200)" >add to cart</button></td></tr></tr>
+            <tr><td>Thumbsup</td><td>20/-</td><td><center><input type="number" value="" min="0" id="Thumbsup" ></center></td><td><button onclick="addto('Thumbsup',20)" >add to cart</button></td></tr></tr>
+            <tr><td>Soda</td><td>10/-</td><td><center><input type="number" value="" min="0" id="Soda" ></center></td><td><button onclick="addto('Soda',10)" >add to cart</button></td></tr></tr>
+            <tr><td>EnergyDrink</td><td>90/-</td><td><center><input type="number" min="0" value="" id="EnergyDrink" ></center></td><td><button onclick="addto('EnergyDrink',90)" >add to cart</button></td></tr></tr>
+            <tr><td>CheeseCake</td><td>50/-</td><td><center><input type="number" min="0" value="" id="CheeseCake" ></center></td><td><button onclick="addto('CheeseCake',50)" >add to cart</button></td></tr></tr>
+            <tr><td>RedWalvetCake</td><td>70/-</td><td><center><input type="number" min="0" value="" id="RedWalvetCake" ></center></td><td><button onclick="addto('RedWalvetCake',70)" >add to cart</button></td></tr></tr>
+            <tr><td>ChocolateCake</td><td>40/-</td><td><center><input type="number" min="0" value="" id="ChocolateCake" ></center></td><td><button onclick="addto('ChocolateCake',40)" >add to cart</button></td></tr></tr>
+        </table>
+       <button style="margin-top:30px;width: max-content;height: 50px;background-color: red;color:white;border-color:white ; cursor: pointer; " onclick="gen();"  >Generat Bill</button></center>
+    </div>
+    <div id="total" >
+        <h1>BILL</h1>
+        
+    <div id="bill"  >
+        
+    </div>
+    <p>----------------------------------------------</p>
+    <h3>total=<span id="totalamount" ></span></h3>
+    </div>
+    </body>
+    <script>
+        let total = 0;
+function addto(item, price) {
+    quantity=document.getElementById(item).value;
+    const itemTotal = quantity * price;
+    total += itemTotal;
+    const itemString = `${item} - ${price} x ${quantity}=${itemTotal}`;
+    if(quantity!=0){
+    document.getElementById('total').style.display="inline";
+    document.getElementById('bill').insertAdjacentHTML('beforeend', `<h5>${itemString}</h5>`);
+    document.getElementById('totalamount').innerHTML=total;
+    }
+    else
+    alert('set quantity');
+}
+function gen(){
+    if(total>0){
+    document.getElementById('items').style.display="none";
+    var n=document.getElementById('total').style;
+    n.animationName="ani";
+    n.animationDuration="3s";
+    n.top="35%";
+    n.left="45%";
+    setTimeout(() => {
+        window.print();    
+    }, 5000);
+    }
+    else
+    alert('please add the cart food items');
+}
+
+    </script>
+</html>
+    alert('set quantity');
+}
+function gen(){
+    if(total>0){
+    document.getElementById('items').style.display="none";
+    var n=document.getElementById('total').style;
+    n.animationName="ani";
+    n.animationDuration="3s";
+    n.top="35%";
+    n.left="45%";
+    setTimeout(() => {
+        window.print();    
+    }, 5000);
+    }
+    else
+    alert('please add the cart food items');
+}
+
+    </script>
+</html>
