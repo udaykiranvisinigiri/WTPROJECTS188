@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('clicked me')" >click me</button><br/>
+    <button onmouseover="alert('over on me')" >onmousehover</button><br/>
+    <button onmouseout="alert('out on me')" >onmouseout</button><br/>
+    <button ondblclick="alert('double clicked on me')" >double click me</button>
+
+</body>
+<style>
+    button{
+        width: 110px;
+        height: 20;
+        background-color: yellow;
+        margin: 3px;
+    }
+    button:hover{
+        width: 120px;
+        height: 20px;
+        background-color: green;
+        transition-duration: 1s;
+    }
+</style>
+</html>

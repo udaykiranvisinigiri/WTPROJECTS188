@@ -1,0 +1,84 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<h1>Survey Form</h1>
+</head>
+<style>
+body{
+  background-image: url('img3.webp');
+	background-repeat:no-repeat;
+	background-size:cover;
+  background-color: beige;
+  font-family: monospace;
+  text-align: center;
+  color:white
+}
+h1{
+    font-size: 24px;
+    font-weight: 300;
+    margin: 50px;
+    
+}
+input
+{
+    border-color: #ccc;
+    border: 1px solid #777;
+    background-color: antiquewhite;
+    margin: 10px;
+    text-align: center;
+    color:black;
+    
+}
+
+.button {
+    background-color: #05c46b;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+</style>
+<body>
+<form name="f1" action="y.php" method="post">
+<table>
+  <tr><td>Name:</td>
+  <td><input type="text" name="nm" placeholder="Enter Name"></td>
+  </tr>
+  <tr><td>Email:</td>
+  <td><input type="abcd" name="eid" placeholder="Enter Email"></td>
+  </tr>
+  <tr>
+  <td>Password:</td>
+  <td><input type="Password" name="pwd" placeholder="Enter Password">
+  </td>
+  </tr>
+  <tr>
+  <td>Date Of Birth:</td>
+  <td><input type="Date" name="DOB"></td>
+  </tr>
+  <tr>
+  <td>Gender:</td>
+  <td><input type="radio" name="Gender">Male</td>
+  <td><input type="radio" name="Gender">Female</td>
+  </tr>
+  <tr>
+  <td>Choose File:</td>
+  <td><input type="file" name="File" accept="html/*"></td>
+  <tr><td>Address:</td>
+  <td><textarea rows=5 col=10>
+  </textarea>
+  </td>
+  </tr>
+  <tr>
+  <td><input type="submit" name="Submit"></td>
+  <td><input type="Reset" name="Reset"></td>
+  </tr>
+  </table>
+  </form>
+  </body>
+  </html>
